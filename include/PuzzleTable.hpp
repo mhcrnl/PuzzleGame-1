@@ -8,7 +8,8 @@ class PuzzleTable
 {
 public:
 	PuzzleTable(GLubyte* rawChunk, int width, int height, int depth,int tableSize);
-	PuzzleChunk getChunkAt(int x, int y);
+	PuzzleChunk* getChunkAt(int x, int y);
+	PuzzleChunk* getChunkByIndex(int index);
 private:
 	PuzzleChunk** puzzle;
 	int width;

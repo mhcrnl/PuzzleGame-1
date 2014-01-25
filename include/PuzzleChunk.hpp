@@ -7,14 +7,17 @@ class PuzzleChunk
 {
 public:
 	//PuzzleChunk();
-	PuzzleChunk(GLubyte* rawChunk, int width, int height, int depth);
+	PuzzleChunk(GLubyte* rawChunk, int width, int height, int depth, int index);
 	int getChunkWidth();
 	int getChunkHeight();
 	GLubyte* getRawChunk();
+	int getIndex();
+	//void setIndex(int i);
 private:
 	GLubyte* rawChunk;
 	int width;
 	int height;
 	int depth;
+	int index;
 };
 #endif
